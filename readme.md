@@ -49,4 +49,4 @@ If you have any question about the project, please feel free to contact me.
 E-mail: boqiang.xu@cripac.ia.ac.cn
 
 ## ACKNOWLEDGEMENTS
-The code was developed based on the ’fast-reid’ toolbox https://git hub.com/JDAI-CV/fast-reid.
+The code was developed based on the ’fast-reid’ toolbox https://github.com/JDAI-CV/fast-reid.
