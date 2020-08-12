@@ -19,8 +19,8 @@ year = {2020}
 ```
 
 ### Preparation
-* Dataset: Black re-ID ([BaiDuDisk](https://pan.baidu.com/s/1aeYCUY7HYeKoA7uw_58n4w) pwd:xubq  please add the path of the Black re-ID dataset to DATASETS.DATASETS_ROOT in ```./projects/Black_reid/configs/Base-HAA.yml```) 
-* Pre-trained STN Model ([https://pan.baidu.com/s/1OH428mw8w11tZ8aShc5A1A] pwd:xubq please add the path of the STN model to DATASETS.STN_ROOT in ```./projects/Black_reid/configs/Base-HAA.yml```) 
+* Dataset: Black re-ID ([BaiDuDisk](https://pan.baidu.com/s/1aeYCUY7HYeKoA7uw_58n4w) ```pwd:xubq```  please add the path of the Black re-ID dataset to DATASETS.DATASETS_ROOT in ```./projects/Black_reid/configs/Base-HAA.yml```) 
+* Pre-trained STN Model ([BaiDuDisk](https://pan.baidu.com/s/1OH428mw8w11tZ8aShc5A1A) ```pwd:xubq``` please add the path of the STN model to DATASETS.STN_ROOT in ```./projects/Black_reid/configs/Base-HAA.yml```) 
 
 
 ### Train
@@ -32,7 +32,7 @@ year = {2020}
 ```
 CUDA_VISIBLE_DEVICES=0 train_net.py --config-file= "configs/HAA_baseline_blackreid.yml"
 ```
-if you want to train with 4-GPU, run:
+   if you want to train with 4-GPU, run:
 ```
 CUDA_VISIBLE_DEVICES=0,1,2,3 train_net.py --config-file= "configs/HAA_baseline_blackreid.yml"
 ```
