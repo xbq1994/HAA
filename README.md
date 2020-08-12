@@ -19,7 +19,7 @@ year = {2020}
 ```
 
 ### Preparation
-* Dataset: Black re-ID ([BaiDuDisk](https://pan.baidu.com/s/1aeYCUY7HYeKoA7uw_58n4w) ```pwd:xubq```  please add the path of the Black re-ID dataset to DATASETS.DATASETS_ROOT in ```./projects/Black_reid/configs/Base-HAA.yml```) 
+* Dataset: Black re-ID ([BaiDuDisk](https://pan.baidu.com/s/1xXxh5662ouoe8AQwN6VolA) ```pwd:xubq```  please add the path of the Black re-ID dataset to DATASETS.DATASETS_ROOT in ```./projects/Black_reid/configs/Base-HAA.yml```) 
 * Pre-trained STN Model ([BaiDuDisk](https://pan.baidu.com/s/1OH428mw8w11tZ8aShc5A1A) ```pwd:xubq``` please add the path of the STN model to DATASETS.STN_ROOT in ```./projects/Black_reid/configs/Base-HAA.yml```) 
 
 
