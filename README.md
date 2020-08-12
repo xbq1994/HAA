@@ -10,8 +10,7 @@ If you find the code useful, please consider citing our paper:
 ```
 @InProceedings{xu2020ACM,
 author = {Boqiang, Xu and Lingxiao, He and Liu, Huanyu and Xingyu, Liao and Wu,Liu and Zhenan, Sun and Tao, Mei},
-title = {Black Re-ID: A Head-shoulder Descriptor for the Challenging
-Problem of Person Re-Identification},
+title = {Black Re-ID: A Head-shoulder Descriptor for the Challenging Problem of Person Re-Identification},
 booktitle = {Proceedings of the 28th ACM International Conference on Multimedia (MM '20)},
 month = {October},
 year = {2020}
