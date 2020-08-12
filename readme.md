@@ -47,3 +47,6 @@ CUDA_VISIBLE_DEVICES=0 train_net.py --config-file= "configs/HAA_baseline_blackre
 If you have any question about the project, please feel free to contact me.
 
 E-mail: boqiang.xu@cripac.ia.ac.cn
+
+## ACKNOWLEDGEMENTS
+The code was developed based on the ’fast-reid’ toolbox https://git hub.com/JDAI-CV/fast-reid.
