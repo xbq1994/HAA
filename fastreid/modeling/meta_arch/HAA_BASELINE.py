@@ -150,7 +150,7 @@ class HAA_BASELINE(nn.Module):
         pred_logits, pred_feat = self.final_head(pred_feat, targets) 
 
 
-        return (logits, hf1_logits, hf2_logits, hf3_logits, hf_logits, pred_logits), \
+        return (logits, hf1_logits, hf2_logits, hf3_logits, hf_logits, pred_logits, black_logits), \
                (global_feat, hf1_pool_feat, hf2_pool_feat, hf3_pool_feat, hf, pred_feat), \
                targets, \
                grid_list, \
@@ -167,12 +167,13 @@ class HAA_BASELINE(nn.Module):
             loss_dict.update(reid_losses(self._cfg, outputs[0][3], outputs[1][3], outputs[2],0.2, 0.2,'hf3_'))
             loss_dict.update(reid_losses(self._cfg, outputs[0][4], outputs[1][4], outputs[2],0.2, 0.2,'hf_'))                
         else: 
-            loss_dict.update(reid_losses(self._cfg, outputs[0][0], outputs[1][0], outputs[2], 0.167, 0.167, 'gf_'))
-            loss_dict.update(reid_losses(self._cfg, outputs[0][1], outputs[1][1], outputs[2], 0.167, 0.167, 'hf1_'))
-            loss_dict.update(reid_losses(self._cfg, outputs[0][2], outputs[1][2], outputs[2], 0.167, 0.167, 'hf2_'))
-            loss_dict.update(reid_losses(self._cfg, outputs[0][3], outputs[1][3], outputs[2], 0.167, 0.167, 'hf3_'))
-            loss_dict.update(reid_losses(self._cfg, outputs[0][4], outputs[1][4], outputs[2], 0.167, 0.167, 'hf_')) 
-            loss_dict.update(reid_losses(self._cfg, outputs[0][5], outputs[1][5], outputs[2], 0.167, 0.167, 'pred_')) 
+            loss_dict.update(reid_losses(self._cfg, outputs[0][0], outputs[1][0], outputs[2], 0.143, 0.167, 'gf_'))
+            loss_dict.update(reid_losses(self._cfg, outputs[0][1], outputs[1][1], outputs[2], 0.143, 0.167, 'hf1_'))
+            loss_dict.update(reid_losses(self._cfg, outputs[0][2], outputs[1][2], outputs[2], 0.143, 0.167, 'hf2_'))
+            loss_dict.update(reid_losses(self._cfg, outputs[0][3], outputs[1][3], outputs[2], 0.143, 0.167, 'hf3_'))
+            loss_dict.update(reid_losses(self._cfg, outputs[0][4], outputs[1][4], outputs[2], 0.143, 0.167, 'hf_')) 
+            loss_dict.update(reid_losses(self._cfg, outputs[0][5], outputs[1][5], outputs[2], 0.143, 0.167, 'pred_')) 
+            loss_dict.update(reid_losses(self._cfg, outputs[0][6], None, outputs[4], 0.143, 0.167, 'blackid_')) 
         return loss_dict
 
     def inference(self, images):
