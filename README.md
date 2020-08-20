@@ -3,8 +3,8 @@
 Problem of Person Re-Identification [paper](http://arxiv.org/abs/2008.08528)
 
 ### Update
-2020-08-12: Update Code.
-2020-08-20: Update paper link.
+*2020-08-12: Update Code.
+*2020-08-20: Update paper link.
 
 ### Bibtex
 If you find the code useful, please consider citing our paper:
