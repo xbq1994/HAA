@@ -1,5 +1,5 @@
 # HAA
-[ACM MM 2020] Black Re-ID: A Head-shoulder Descriptor for the Challenging
+[ACM MM 2020 Oral] Black Re-ID: A Head-shoulder Descriptor for the Challenging
 Problem of Person Re-Identification [paper](http://arxiv.org/abs/2008.08528)
 
 ### Update
