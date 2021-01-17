@@ -24,7 +24,7 @@ year = {2020}
 ### Preparation
 * Dataset: Black re-ID  
 Black group: ([BaiDuDisk](https://pan.baidu.com/s/1xXxh5662ouoe8AQwN6VolA) ```pwd:xubq```)  
-White group: ([BaiDuDisk](https://pan.baidu.com/s/1oTmjkl8dM067OhrJQwzB4g) ```pwd:xubq```) 
+
 
 please add the path of the Black re-ID dataset to DATASETS.DATASETS_ROOT in ```./projects/Black_reid/configs/Base-HAA.yml```
 * Pre-trained STN Model  
