@@ -42,17 +42,17 @@ please add the path of the STN model to DATASETS.STN_ROOT in ```./projects/Black
 ```
 2. If you want to train with 1-GPU, run:
 ```
-CUDA_VISIBLE_DEVICES=0 train_net.py --config-file= "configs/HAA_baseline_blackreid.yml"
+CUDA_VISIBLE_DEVICES=0 python train_net.py --config-file="configs/HAA_baseline_blackreid.yml"
 ```
    if you want to train with 4-GPU, run:
 ```
-CUDA_VISIBLE_DEVICES=0,1,2,3 train_net.py --config-file= "configs/HAA_baseline_blackreid.yml"
+CUDA_VISIBLE_DEVICES=0,1,2,3 python train_net.py --config-file="configs/HAA_baseline_blackreid.yml"
 ```
 
 ### Evaluation
 To evaluate a model's performance, use:
 ```
-CUDA_VISIBLE_DEVICES=0 train_net.py --config-file= "configs/HAA_baseline_blackreid.yml" --eval-only MODEL.WEIGHTS /path/to/checkpoint_file
+CUDA_VISIBLE_DEVICES=0 python train_net.py --config-file="configs/HAA_baseline_blackreid.yml" --eval-only MODEL.WEIGHTS /path/to/checkpoint_file
 ```
 
 ## Contacts
